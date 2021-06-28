@@ -10,9 +10,7 @@ let url2 = "owid-covid-data.json";
 
 const loadData = async () => {
 	try {
-		const res = await fetch(url1, {
-			'Access-Control-Allow-Origin': '*'
-		});
+		const res = await fetch(url1);
 		console.log(res);
 		covidData = await res.json();
 		console.log(covidData);
